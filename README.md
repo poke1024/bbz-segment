@@ -11,3 +11,4 @@ This repository contains code and data for the paper at <a href="http://arxiv.or
 
 * `04_evaluation` contains various scripts for evaluating performance, as well as our raw data (as <a href="https://github.com/IDSIA/sacred">sacred</a> runs, see `04_evaluation/data`).
 
+Note that `train.py` contains AdamW optimizer code copied from https://github.com/OverLordGoldDragon/keras-adamw.
