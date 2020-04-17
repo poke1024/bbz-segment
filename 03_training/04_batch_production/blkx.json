@@ -1,0 +1,11 @@
+{
+	"backbone": ["seresnet50"],
+	"model": ["fpn"],
+	"labels": ["txt", "sep"],
+	"illustrations": [true],
+	"data_name": ["layout_1280x2400_T1280x896"],
+	"fold": [1, 2, 3, 4, 5],
+	"save_model": [true],
+	"ngpus": [4],
+	"batchsize": [12]
+}
