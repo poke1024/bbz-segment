@@ -25,4 +25,4 @@ This repository contains code and data for the paper at <a href="http://arxiv.or
 ## Predicted BLKX labels
 
 ![Prediction for blkx](05_prediction/demo/2436020X_1925-02-27_70_98_008.blkx.png)
-**Legend**. Red: Background, Blue: Text Region, Orange: Table Region.
+**Legend**. Red: Background, Blue: Text Region, Orange: Table Region, Green: Illustrations/Borders.
