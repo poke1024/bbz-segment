@@ -11,4 +11,18 @@ This repository contains code and data for the paper at <a href="http://arxiv.or
 
 * `04_evaluation` contains various scripts for evaluating performance, as well as our raw data (as <a href="https://github.com/IDSIA/sacred">sacred</a> runs, see `04_evaluation/data`).
 
-* `05_prediction` gives scripts for running our final models for prediction. Download the models at <a href="https://www.dropbox.com/sh/7tph1tzscw3cb8r/AAA9WxhqoKJu9jLfVU5GqgkFa?dl=0">Dropbox</a> and move them to `05_prediction/data/models`. Then run `05_prediction/src/main.py` to predict the accompanying demo file in `05_prediction/data/pages/2436020X_1925-02-27_70_98_008.jpg`. Note that you need to have numpy, tensorflow and <a href="https://github.com/qubvel/segmentation_models">segmentation_models</a> installed.
+* `05_prediction` gives scripts for running our final models for prediction (see graphics below for the demo result). To run it yourself on on this or other document images, first download the models at <a href="https://www.dropbox.com/sh/7tph1tzscw3cb8r/AAA9WxhqoKJu9jLfVU5GqgkFa?dl=0">Dropbox</a> and move them to `05_prediction/data/models`. Then run `05_prediction/src/main.py` to predict the files in `05_prediction/data/pages`. Note that you need to have numpy, tensorflow and <a href="https://github.com/qubvel/segmentation_models">segmentation_models</a> installed.
+
+## Demo Page
+
+![Page](05_prediction/data/pages/2436020X_1925-02-27_70_98_008.jpg)
+
+## Predicted SEP labels
+
+![Prediction for sep](05_prediction/demo/2436020X_1925-02-27_70_98_008.sep.png)
+**Legend**. Red: Background, Orange: Horizontal Separators, Green: Vertical Separators, Blue: Table Column Separators.
+
+## Predicted BLKX labels
+
+![Prediction for blkx](05_prediction/demo/2436020X_1925-02-27_70_98_008.blkx.png)
+**Legend**. Red: Background, Blue: Text Region, Orange: Table Region.
